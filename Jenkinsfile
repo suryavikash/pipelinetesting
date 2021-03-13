@@ -12,7 +12,7 @@ pipeline {
 
         stage('Build Docker Image') {
           steps {
-            sh 'cd /var/lib/jenkins/workspace/pipelinetesting_master'
+            sh 'cd /var/lib/jenkins/workspace/pipeline1/pipelinetesting_master'
             sh 'docker build -t madhudevops111/pipelinetestmaster:${BUILD_NUMBER} .'
             }
         }
